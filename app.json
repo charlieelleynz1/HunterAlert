@@ -22,39 +22,36 @@
         "android.permission.MODIFY_AUDIO_SETTINGS"
       ],
       "package": "xyz.create.CreateExpoEnvironment"
-    },
-    "plugins": [
-      [
-        "expo-router",
-        {
-          "sitemap": false
-        }
-      ],
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain"
-        }
-      ],
-      "expo-audio",
-      [
-        "expo-build-properties",
-        {
-          "ios": {
-            "useFrameworks": "static"
-          }
-        }
-      ],
-      [
-        "expo-video",
-        { "supportsBackgroundPlayback": true, "supportsPictureInPicture": true }
-      ],
-      "expo-font",
-      "expo-secure-store",
-      "expo-web-browser"
-    ],
+    },"plugins": [
+  "expo-router",
+  [
+    "expo-splash-screen",
+    {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    }
+  ],
+  "expo-audio",
+  [
+    "expo-build-properties",
+    {
+      "ios": {
+        "useFrameworks": "static"
+      }
+    }
+  ],
+  [
+    "expo-video",
+    {
+      "supportsBackgroundPlayback": true,
+      "supportsPictureInPicture": true
+    }
+  ],
+  "expo-font",
+  "expo-secure-store",
+  "expo-web-browser"
+],
     "web": {
       "bundler": "metro",
       "favicon": "./assets/images/favicon.png"
