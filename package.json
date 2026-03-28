@@ -24,6 +24,18 @@
     "@uploadcare/upload-client": "6.14.3",
     "color2k": "2.0.3",
     "date-fns": "4.1.0",
+{
+  "install": {
+    "exclude": [
+      "expo-router",
+      "react",
+      "expo-constants",
+      "expo-location",
+      "expo-splash-screen",
+      "@expo/metro-runtime"
+    ]
+  }
+},
     "expo": "54.0.13",
     "expo-audio": "1.0.13",
     "expo-av": "16.0.7",
