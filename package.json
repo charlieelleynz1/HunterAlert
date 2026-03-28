@@ -20,6 +20,18 @@
       ]
     },
     "doctor": {
+      "duplicateDependenciesCheck": {
+        "exclude": [
+          "expo-router",
+          "expo-constants",
+          "expo-location",
+          "expo-splash-screen",
+          "expo-glass-effect",
+          "react",
+          "react-native-safe-area-context",
+          "@expo/metro-runtime"
+        ]
+      },
       "reactNativeDirectoryCheck": {
         "exclude": [
           "expo-av",
