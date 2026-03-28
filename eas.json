@@ -19,3 +19,8 @@
 		"production": {}
 	}
 }
+{
+  "cli": {
+    "appDir": "apps/mobile"
+  }
+}
