@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "scripts": {
     "postinstall": "patch-package"
-  }, "expo": {
+  },
+
+  "expo": {
     "install": {
       "exclude": [
         "expo-router",
@@ -12,10 +14,24 @@
         "expo-constants",
         "expo-location",
         "expo-splash-screen",
-        "@expo/metro-runtime"
+        "@expo/metro-runtime",
+        "expo-glass-effect",
+        "react-native-safe-area-context"
       ]
+    },
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": [
+          "expo-av",
+          "@anythingai/launcher",
+          "expo-modules-core",
+          "expo-image-loader"
+        ],
+        "listUnknownPackages": false
+      }
     }
   },
+
   "dependencies": {
     "@anythingai/app": "0.1.96",
     "@expo-google-fonts/dev": "0.4.7",
@@ -103,6 +119,7 @@
     "zod": "4.1.11",
     "zustand": "5.0.3"
   },
+
   "devDependencies": {
     "@expo/cli": "54.0.1",
     "@tailwindcss/postcss": "4.1.18",
@@ -117,10 +134,13 @@
     "tailwindcss": "3",
     "tailwindcss-animate": "1.0.7"
   },
+
   "jest": {
     "preset": "jest-expo"
   },
+
   "private": true,
+
   "overrides": {
     "@react-navigation/bottom-tabs": "7.4.8",
     "@react-navigation/core": "7.12.4",
