@@ -6,6 +6,11 @@
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+
+    "react-native-google-mobile-ads": {
+      "android_app_id": "ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY"
+    },
+
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
