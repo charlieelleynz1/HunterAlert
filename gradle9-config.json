@@ -1,0 +1,84 @@
+{
+  "gradle": {
+    "version": "9.0.0",
+    "distributionUrl": "https://services.gradle.org/distributions/gradle-9.0-all.zip",
+    "jvmArgs": {
+      "maxHeapSize": "4096m",
+      "maxMetaspaceSize": "1024m",
+      "fileEncoding": "UTF-8",
+      "heapDumpOnError": true
+    },
+    "buildOptimizations": {
+      "parallel": true,
+      "caching": true,
+      "daemon": true,
+      "configureOnDemand": false,
+      "vfsWatch": true,
+      "configurationCache": false
+    }
+  },
+  "android": {
+    "compileSdkVersion": 35,
+    "targetSdkVersion": 35,
+    "minSdkVersion": 24,
+    "buildToolsVersion": "35.0.0",
+    "agpVersion": "9.x",
+    "kotlinVersion": "2.0.21",
+    "ndkVersion": "27.2.12479018",
+    "buildFeatures": {
+      "buildConfig": true,
+      "aidl": false,
+      "renderScript": false,
+      "resValues": true,
+      "shaders": false
+    },
+    "optimization": {
+      "useAndroidX": true,
+      "enableJetifier": true,
+      "r8FullMode": true,
+      "dexingArtifactTransform": true,
+      "nonTransitiveRClass": true,
+      "nonFinalResIds": true,
+      "enableProguard": true,
+      "enableShrinkResources": true
+    },
+    "lint": {
+      "checkReleaseBuilds": true,
+      "abortOnError": false
+    }
+  },
+  "expo": {
+    "sdkVersion": "55",
+    "useMetroWorkspaceRoot": true,
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      "expo-build-properties"
+    ]
+  },
+  "easBuild": {
+    "image": "latest",
+    "npmCacheDisabled": true,
+    "autoIncrement": true,
+    "gradleCommands": {
+      "debug": ":app:assembleDebug",
+      "release": ":app:assembleRelease",
+      "bundle": ":app:bundleRelease"
+    }
+  },
+  "compatibility": {
+    "gradle9": true,
+    "agp9": true,
+    "expo55": true,
+    "android15": true,
+    "kotlin2": true
+  },
+  "notes": {
+    "description": "Gradle 9 and AGP 9.x compatible build configuration for Expo 55",
+    "easBuildRecommended": true,
+    "configurationCacheStable": false,
+    "r8Notes": "Full mode enabled for maximum code shrinking and obfuscation",
+    "memoryNotes": "4GB heap allocated for large projects with many dependencies",
+    "buildOptimizationNotes": "Parallel builds, caching, and VFS watching enabled for faster builds"
+  }
+}
